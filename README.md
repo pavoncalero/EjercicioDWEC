@@ -1,2 +1,4 @@
 # EjercicioDWEC
-Entre
+Entrega
+
+version 1.0.2

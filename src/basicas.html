@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Basicas</title>
+</head>
+<body>
+
+
+  <h1>Basicas</h1>
+   <p>
+    <br>
+    git fetch:<br>
+    Descarga los cambios realizados en el repositorio remoto.
+    <br>
+    <br>
+    git merge :<br>
+    Impacta en la rama en la que te encuentras parado, los cambios realizados
+     en la rama “nombre_rama”.
+     <br>
+     <br>
+    git pull:<br>
+    Unifica los comandos fetch y merge en un único comando.
+    <br>
+    <br>
+    git commit -am :<br>
+    Confirma los cambios realizados. El “mensaje” generalmente se usa para asociar
+     al commit una breve descripción de los cambios realizados.
+     <br>
+     <br>
+    git push origin :<br>
+    Sube la rama “nombre_rama” al servidor remoto.
+    <br>
+    <br>
+    git status:<br>
+    Muestra el estado actual de la rama, como los cambios que hay sin commitear.
+    <br>
+    <br>
+    git add :<br>
+    Comienza a trackear el archivo “nombre_archivo”.
+    <br>
+    <br>
+    git checkout -b :<br>
+    Crea una rama a partir de la que te encuentres parado con el nombre
+    “nombre_rama_nueva”, y luego salta sobre la rama nueva, por lo que quedas
+      parado en esta última.
+     <br>
+     <br>
+    git checkout -t origin:<br>
+    Si existe una rama remota de nombre “nombre_rama”, al ejecutar este comando
+     se crea una rama local con el nombre “nombre_rama” para hacer un seguimiento
+      de la rama remota con el mismo nombre.
+      <br>
+      <br>
+    git branch:<br>
+    Lista todas las ramas locales.
+    <br>
+    <br>
+    git branch -a:<br>
+    Lista todas las ramas locales y remotas.
+    <br>
+    <br>
+    git branch -d :<br>
+    Elimina la rama local con el nombre “nombre_rama”.
+    <br>
+    <br>
+    git push origin :<br>
+    Commitea los cambios desde el branch local origin al branch “nombre_rama”.
+    <br>
+    <br>
+    git remote prune origin:<br>
+    Actualiza tu repositorio remoto en caso que algún otro desarrollador haya
+    eliminado alguna rama remota.
+    <br>
+    <br>
+    git reset --hard HEAD:<br>
+    Elimina los cambios realizados que aún no se hayan hecho commit.
+    <br>
+    <br>
+    git revert:<br>
+    Revierte el commit realizado, identificado por el “hash_commit”.
+    <br>
+    <br>
+    Buenas prácticas[editar]<br>
+    Cada desarrollador o equipo de desarrollo puede hacer uso de Git de la
+    forma que le parezca conveniente. Sin embargo una buena práctica es la siguiente:
+    <br>
+    <br>
+    Se deben utilizar 4 tipos de ramas: Master, Development, Features, y Hotfix.
+    <br>
+    Master:<br>
+    Es la rama principal. Contiene el repositorio que se encuentra publicado
+    en producción, por lo que debe estar siempre estable.
+    <br>
+    <br>
+    Development:<br>
+    Es una rama sacada de master. Es la rama de integración, todas las nuevas
+    funcionalidades se deben integrar en esta rama. Luego que se realice la
+    integración y se corrijan los errores (en caso de haber alguno), es decir que
+     la rama se encuentre estable, se puede hacer un merge de development sobre la
+      rama master.
+      <br>
+      <br>
+    Features:<br>
+    Cada nueva funcionalidad se debe realizar en una rama nueva, específica para esa
+     funcionalidad. Estas se deben sacar de development. Una vez que la funcionalidad
+      esté desarrollada, se hace un merge de la rama sobre development, donde se integrará
+       con las demás funcionalidades.
+       <br>
+       <br>
+    Hotfix:<br>
+    Son bugs que surgen en producción, por lo que se deben arreglar y publicar de
+    forma urgente. Es por ello, que son ramas sacadas de master. Una vez corregido
+     el error, se debe hacer un merge de la rama sobre master. Al final, para que
+     no quede desactualizada, se debe realizar el merge de master sobre development.
+     </p>
+</body>
+</html>

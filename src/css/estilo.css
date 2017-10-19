@@ -1,0 +1,41 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+}
+p, h1{
+  margin: 20px;
+  text-align: justify;
+}
+
+li {
+  float: left;
+  border-right: 1px solid white;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+
+.active {
+  background-color: rgb(139, 70, 13);
+}
